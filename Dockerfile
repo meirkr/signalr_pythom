@@ -4,4 +4,4 @@ RUN git clone https://github.com/mandrewcito/signalrcore.git
 WORKDIR /signalrcore
 RUN python setup.py install
 COPY SignalrClient.py .
-CMD pyrhon SignalrClient.py
+CMD python SignalrClient.py
