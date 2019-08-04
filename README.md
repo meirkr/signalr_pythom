@@ -8,6 +8,6 @@ This code is also packaged by docker.
 
 So, to run this file, it will be enough having docker runtime installed to be able to run this client anywhere, even though python is not installed.
 Just run:
-## docker run --rm -it meirkr/signalr_python. ##
+## docker run --rm -it meirkr/signalr_python ##
 
 type "exit()" to exit the app.
