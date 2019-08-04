@@ -1,6 +1,7 @@
 FROM python:rc-buster
 RUN apt-get install git
 RUN git clone https://github.com/mandrewcito/signalrcore.git
-RUN python signalrcore/setup.py
+WORKDIR /signalrcore
+RUN python setup.py install
 COPY SignalrClient.py .
 CMD pyrhon SignalrClient.py
