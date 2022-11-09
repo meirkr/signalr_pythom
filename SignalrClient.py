@@ -6,8 +6,7 @@ def input_with_default(input_text, default_value):
     return default_value if value is None or value.strip() == "" else value
 
 
-### server_url = input_with_default('Enter your server url(default: {0}): ', "wss://meirkr.com/chat")
-server_url = "ws://meirkr.com/chat"
+server_url = input_with_default('Enter your server url(default: {0}): ', "wss://meirkr.com/chat")
 username = input_with_default('Enter your username (default: {0}): ', "python")
 
 hub_connection = HubConnectionBuilder().with_url(server_url).with_automatic_reconnect({
