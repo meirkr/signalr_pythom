@@ -22,6 +22,6 @@ message = None
 
 while message != "exit()":
     message = input(">> ")
-    if message is not None and message is not "exit()":
+    if message != None and message != "exit()":
         hub_connection.send("sendToAll", [username, message])
 hub_connection.stop()
